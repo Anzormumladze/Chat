@@ -11,8 +11,6 @@ import { Ionicons } from "@expo/vector-icons";
 
 const LoginScreen = (props) => {
   const [name, setName] = useState("");
-  console.log(name);
-
   const nextScreen = () => {
     props.navigation.navigate("ChatScreen", { name: name });
   };
