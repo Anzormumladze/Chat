@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator headerMode="none">
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="ChatScreen" component={ChatScreen} />
       </Stack.Navigator>
