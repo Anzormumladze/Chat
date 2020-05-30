@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Platform, KeyboardAvoidingView, SafeAreaView } from "react-native";
 
 const ChatScreen = () => {
   return (
