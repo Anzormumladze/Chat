@@ -36,18 +36,10 @@ export default class ChatScreen extends React.Component {
         user={this.user}
       />
     );
-    if (Platform.OS === "android") {
-      return (
-        <KeyboardAvoidingView
-          style={{ flex: 1 }}
-          behavior="padding"
-          keyboardVerticalOffset={30}
-          enabled
-        >
-          {chat}
-        </KeyboardAvoidingView>
-      );
-    }
-    return <SafeAreaView style={{ flex: 1 }}>{chat}</SafeAreaView>;
+    return (
+      <SafeAreaView style={{ flex: 1, justifyContent: "center" }}>
+        {chat}
+      </SafeAreaView>
+    );
   }
 }
